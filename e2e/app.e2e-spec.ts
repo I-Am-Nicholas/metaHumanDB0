@@ -1,14 +1,12 @@
-import { MetaHumanDBPage } from './app.po';
+describe('MetaHumanDB App', () => {
 
-describe('meta-human-db App', () => {
-  let page: MetaHumanDBPage;
 
-  beforeEach(() => {
-    page = new MetaHumanDBPage();
+  beforeEach( () => {
+    browser.get('http://localhost:4200/dashboard');
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+  it('should have a title', () => {
+    expect(browser.getTitle()).toEqual('MetaHumanDB');
   });
+
 });
