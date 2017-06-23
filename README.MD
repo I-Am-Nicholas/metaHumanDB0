@@ -2,6 +2,8 @@
 
 ## OVERVIEW
 
- - an application to help you keep track of who's who in the world of super-powered individuals.
+- an application to help you keep track of who's who in the world of super-powered individuals.
 
- - Written in Angular 4.
+- Written in Angular 4.
+
+- Tested with Protractor, Karma and Jasmine.  
