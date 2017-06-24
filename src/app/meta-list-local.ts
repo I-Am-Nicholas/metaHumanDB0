@@ -1,6 +1,6 @@
 import { Meta } from './meta';
 
-export const HEROES: Hero[] = [
+export const METAS: Meta[] = [
   {id: 1, name: 'Iron Man', logo: 'assets/faceplate.png' },
   {id: 2, name: 'Captain America', logo: 'assets/shield.png' },
   {id: 3, name: 'Hulk', logo: 'assets/gamma.jpg' },
