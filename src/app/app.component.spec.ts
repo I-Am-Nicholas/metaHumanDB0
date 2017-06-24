@@ -22,7 +22,7 @@ describe('AppComponent', () => {
 
     fixture = TestBed.createComponent(AppComponent);
     comp = fixture.componentInstance;
-    dbug = fixture.debugElement//.query(By.css('nav'));
+    dbug = fixture.debugElement
     HTMLnode = fixture.debugElement.nativeElement;
 
   }));
@@ -42,7 +42,11 @@ describe('AppComponent', () => {
   }));
 
   it("should render a nav button titled 'Dashboard'", async(() => {
-    expect(HTMLnode.querySelector('nav a').textContent).toContain('Dashboard');
+    expect(HTMLnode.querySelector('#dashboard').textContent).toMatch('Dashboard');
+  }));
+
+  it("should render a nav button titled 'Meta-Human List'", async(() => {
+    expect(HTMLnode.querySelector('#metaList').textContent).toMatch('Meta-Human List');
   }));
 
 });

@@ -5,18 +5,25 @@ describe('MetaHumanDB App', () => {
   });
 
   var body = $('body')
+  var dashWrapper = $('#grid-wrap');
+  var metas = $('.metas')
 
   it('should have a title', () => {
     expect(browser.getTitle()).toEqual('MetaHumanDB');
   });
 
-  it("should not show 'IRON MAN'", () => {
-    expect(body.getText()).not.toContain('IRON MAN');
+  it("should not show the dashboard elements before dashboard button is clicked", () => {
+    expect(browser.isElementPresent(dashWrapper)).toBe(false);
   });
 
-  it('clicking Dashboard shows a portion of the meta-humans list', () => {
-    browser.findElement(by.id('dash')).click();
-    expect(body.getText()).toContain('IRON MAN');
+  it('clicking Dashboard shows Dashboard', () => {
+    browser.findElement(by.id('dashboard')).click();
+    expect(browser.isElementPresent(dashWrapper)).toBe(true);
+  });
+
+  it('clicking Meta-List shows a list of all meta-humans', () => {
+    browser.findElement(by.id('metaList')).click();
+    expect(browser.isElementPresent(metas)).toBe(true);
   });
 
 });
