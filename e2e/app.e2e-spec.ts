@@ -26,4 +26,8 @@ describe('MetaHumanDB App', () => {
     expect(browser.isElementPresent(metas)).toBe(true);
   });
 
+  it('clicking first name in Meta-List shows details of the selected Meta-Human.', () => {
+    ironman = element.all(by.css('.metas')).first();
+    expect(browser.isElementPresent($('.detail'))).toBe(true);
+  });
 });
