@@ -1,0 +1,39 @@
+.dashBtns {
+  font-size: 1.5em;
+  vertical-align: center;
+  padding: 20px;
+  text-align: center;
+  color: lightgray;
+  max-height: 120px;
+  min-width: 120px;
+  background-color: #21658c;
+  border-radius: 6px;
+}
+
+.dashBtns:hover{
+  color: #fff;
+}
+
+#grid-wrap {
+  border: 1px solid white;
+  padding: 25px;
+  height: 600px;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.grid {
+  margin: 0;
+}
+
+.grid-pad {
+  padding: 10px 0;
+}
+
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}

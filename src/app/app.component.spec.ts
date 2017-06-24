@@ -45,5 +45,4 @@ describe('AppComponent', () => {
     expect(HTMLnode.querySelector('nav a').textContent).toContain('Dashboard');
   }));
 
-
 });
