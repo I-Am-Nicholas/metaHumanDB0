@@ -9,4 +9,11 @@ describe('MetaHumanDB App', () => {
     expect(browser.getTitle()).toEqual('MetaHumanDB');
   });
 
+  it('clicking metas shows list of meta-humans', () => {
+    var body = $('body')
+    var dash = browser.findElement(by.id('dash'));
+    dash.click();
+    expect(body.getText()).toContain('IRON MAN');
+  });
+
 });
