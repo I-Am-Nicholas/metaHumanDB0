@@ -4,11 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard.component';
+import { MetasComponent } from './metas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    MetasComponent
   ],
   imports: [
     BrowserModule,
