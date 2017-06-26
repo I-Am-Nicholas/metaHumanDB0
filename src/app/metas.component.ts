@@ -6,6 +6,7 @@ import { MetaService } from './meta-service';
 
 @Component({
   templateUrl: './metas.component.html',
+  styleUrls: ['./metas.component.css']
 })
 
 export class MetasComponent implements OnInit {
