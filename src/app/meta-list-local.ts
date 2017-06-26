@@ -10,6 +10,5 @@ export const METAS: Meta[] = [
   {id: 7, name: 'Scarlet Witch', logo: 'assets/scarlet.jpg' },
   {id: 8, name: 'Hawkeye', logo: 'assets/arrow.jpg' },
   {id: 9, name: 'Black Widow', logo: 'assets/spider2.jpg' },
-  {id: 10, name: 'Vision', logo: 'assets/gem.jpg' },
-  {id: 11, name: 'Ant-Man', logo: 'assets/ant.jpg' }
+  {id: 10, name: 'Vision', logo: 'assets/gem.jpg' }
 ];

@@ -1,1 +1,5 @@
-<div class="metas"><div>
+<ul class="metas">
+  <li *ngFor= "let meta of metaShown" >
+    <span class="badge">{{meta.id}}</span> {{meta.name}}
+  </li>
+</ul>

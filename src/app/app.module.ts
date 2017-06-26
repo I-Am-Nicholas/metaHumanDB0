@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard.component';
 import { MetasComponent } from './metas.component';
+import { MetaService } from './meta-service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { MetasComponent } from './metas.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MetaService],
   bootstrap: [AppComponent]
 })
 
