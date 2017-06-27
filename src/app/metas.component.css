@@ -1,5 +1,5 @@
 
-.selected {
+.selectedMeta {
    background-color: #CFD8DC !important;
    color: white;
  }
@@ -21,8 +21,8 @@
    height: 1.6em;
    border-radius: 4px;
  }
- .metas li.selected:hover {
-   /*background-color: #BBD8DC !important;*/
+ .metas li.selectedMeta:hover {
+   background-color: #BBD8DC !important;
    color: white;
  }
  button:hover, .metas li:hover {

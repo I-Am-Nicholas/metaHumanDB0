@@ -6,7 +6,7 @@ import { MetaService } from './meta-service';
 
 @Component({
   templateUrl: './metas.component.html',
-  styleUrls: ['./metas.component.css']
+  styleUrls: ['./metas.component.css', './sharedBG.css']
 })
 
 export class MetasComponent implements OnInit {
@@ -24,6 +24,12 @@ export class MetasComponent implements OnInit {
 
   getTheMetas(): void {
     this.metaService.getMetas().then(metas => this.metaShown = metas);
+  }
+
+  selectedMeta: Meta;
+
+  onSelect(meta: Meta): void {
+    this.selectedMeta = meta;
   }
 
 }
