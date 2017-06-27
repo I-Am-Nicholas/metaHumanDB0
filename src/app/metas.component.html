@@ -1,8 +1,10 @@
-<ul class="metas background">
-  <li *ngFor= "let meta of metaShown"
-    [class.selectedMeta]="meta === selectedMeta"
-       (click)="onSelect(meta)">
-    <span class="badge">{{meta.id}}</span> {{meta.name}}
-  </li>
-</ul>
-<meta-detail [meta]="selectedMeta"></meta-detail>
+<div id="metasWrap">
+  <ul class="metas background">
+    <li *ngFor= "let meta of metaShown"
+      [class.selectedMeta]="meta === selectedMeta"
+         (click)="onSelect(meta)">
+      <span class="badge">{{meta.id}}</span> {{meta.name}}
+    </li>
+  </ul>
+  <meta-detail [meta]="selectedMeta"></meta-detail>
+</div>
