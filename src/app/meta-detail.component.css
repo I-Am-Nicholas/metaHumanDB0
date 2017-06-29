@@ -1,9 +1,11 @@
 .detail {
-  color: gray;
+  position: relative;
+  float: right;
+  color: #333;
   border: 1px solid white;
   text-align: center;
   height: 150px;
-  width: 100%;
+  width: 300px;
   padding-right: 22px;
   font-size: 1.25em;
 }

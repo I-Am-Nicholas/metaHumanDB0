@@ -12,5 +12,5 @@ import { MetaService } from './meta-service';
 export class AppComponent {
 
   constructor(private metaService: MetaService) { }
-  title = 'META-HUMAN DATABASE';
+  title = '-HUMAN DATABASE';
 }
