@@ -4,16 +4,19 @@
  }
 
  #metasWrap {
-  width: 300px;
+  position: relative;
+  width: 700px;
   padding-right: 22px;
  }
 
  .metas {
    border: 1px solid white;
-   color: lightgray; margin: 0 0 2em 0;
+   color: lightgray;
+   margin: 0 0 2em 0;
    list-style-type: none;
    padding: 10px;
-   width: 100%;
+   width: 300px;
+   float: left;
  }
 
  button, .metas li {
