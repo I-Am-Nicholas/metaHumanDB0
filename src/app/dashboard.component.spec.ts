@@ -7,8 +7,6 @@ import { MetaService } from './meta-service';
 let fixture: ComponentFixture<DashboardComponent>;
 let HTMLnode: HTMLElement;
 let page: Page;
-let comp: DashboardComponent;
-let mockNames: {}
 
 describe('DashboardComponent', () => {
 
@@ -23,7 +21,6 @@ describe('DashboardComponent', () => {
 
     fixture = TestBed.createComponent( DashboardComponent );
     HTMLnode = fixture.debugElement.nativeElement;
-    comp = fixture.componentInstance;
 
     TestBed.compileComponents().then(checkDOMWhenStable);
 
@@ -34,13 +31,8 @@ describe('DashboardComponent', () => {
     expect(HTMLnode.querySelector('#grid-wrap').childElementCount).toEqual(1);
   });
 
-  it("should render correct number of button elements", () => {
-    mockNames = {
-      alias: "Steve",
-      anonym: "Bruce",
-    }
-    spyOn(comp, 'ngOnInit').and.returnValue(mockNames);
-    expect(Object.keys(comp.ngOnInit()).length).toEqual(Object.keys(mockNames).length);
+  it("should render correct number of buttons elements", () => {
+    expect(page.dashButtons.length).toBeGreaterThan(0);
   });
 
 });
@@ -56,6 +48,7 @@ function checkDOMWhenStable() {
 
 class Page {
   dashButtons: HTMLElement[];
+
   constructor() {
     this.dashButtons = fixture.debugElement.queryAll(By.css('h4'))
       .map(debug => debug.nativeElement);

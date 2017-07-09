@@ -30,7 +30,7 @@ describe('AppComponent', () => {
   });
 
   it(`should have the given text as title`, () => {
-    expect(comp.title).toEqual('META-HUMAN DATABASE');
+    expect(comp.title).toEqual('-HUMAN DATABASE');
   });
 
   it('should render title in a h1 tag', () => {
