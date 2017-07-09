@@ -1,6 +1,10 @@
 <br><br>
 <div id="grid-wrap" class="background">
   <div class="grid grid-pad">
-    <div class="dashBtns">IRON MAN</div>
+    <div *ngFor="let meta of metas" class="col-1-4">
+      <div class="dashBtns hero">
+        <h4>{{meta.name | uppercase}}</h4>
+      </div>
+    </div>
   </div>
 </div>

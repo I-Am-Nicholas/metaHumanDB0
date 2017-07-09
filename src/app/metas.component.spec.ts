@@ -52,7 +52,6 @@ describe('MetasComponent', () => {
 
 });
 
-
 function checkDOMWhenStable() {
   // change detection triggers ngOnInit which gets a meta
   fixture.detectChanges();
@@ -66,8 +65,6 @@ function checkDOMWhenStable() {
     page = new Page();
   });
 }
-
-
 
 class Page {
   metaRows: HTMLElement[];
