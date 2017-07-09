@@ -15,7 +15,7 @@ export class MetasComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private metaService: MetaService
+    private metaService: MetaService,
   ) { }
 
   ngOnInit(): void {
