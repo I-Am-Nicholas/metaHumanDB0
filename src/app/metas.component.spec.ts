@@ -15,9 +15,6 @@ let page: Page;
 describe('MetasComponent', () => {
 
   beforeEach( async(() => {
-    testMetas = {
-      testThing: "Sunrays"
-    };
 
     TestBed.configureTestingModule({
       declarations: [ MetasComponent ],
@@ -39,9 +36,9 @@ describe('MetasComponent', () => {
   });
 
   it('executes the enclosed method call', () => {
-    var spy = spyOn(comp, 'getTheMetas')
-    .and.returnValue(testMetas);
-    expect(comp.getTheMetas()).toEqual(jasmine.objectContaining({testThing: 'Sunrays'}))
+    testMetas = { mockObject: "Superheroes" };
+    spyOn(comp, 'getTheMetas').and.returnValue(testMetas);
+    expect(comp.getTheMetas()).toEqual(jasmine.objectContaining({mockObject: 'Superheroes'}))
   });
 
   it("selectedMeta attains the value passed in to the onSelect method", () => {
