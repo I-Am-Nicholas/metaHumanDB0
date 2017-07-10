@@ -35,6 +35,10 @@ describe('DashboardComponent', () => {
     expect(page.dashButtons.length).toBeGreaterThan(0);
   });
 
+  it("should render correct number of image elements", () => {
+    expect(page.dashImages.length).toBeGreaterThan(0);
+  });
+
 });
 
 function checkDOMWhenStable() {
@@ -48,9 +52,12 @@ function checkDOMWhenStable() {
 
 class Page {
   dashButtons: HTMLElement[];
+  dashImages: HTMLElement[];
 
   constructor() {
     this.dashButtons = fixture.debugElement.queryAll(By.css('h4'))
+      .map(debug => debug.nativeElement);
+    this.dashImages = fixture.debugElement.queryAll(By.css('img'))
       .map(debug => debug.nativeElement);
   }
 }
