@@ -39,6 +39,10 @@ describe('DashboardComponent', () => {
     expect(page.dashImages.length).toBeGreaterThan(0);
   });
 
+  it("should render same number of images as of buttons", () =>{
+    expect(page.dashImages.length == page.dashButtons.length).toBe(true);
+  });
+
 });
 
 function checkDOMWhenStable() {
