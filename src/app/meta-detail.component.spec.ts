@@ -24,7 +24,7 @@ describe('MetaDetailComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MetaDetailComponent);
-    comp    = fixture.componentInstance;
+    comp = fixture.componentInstance;
     DOMElement  = fixture.debugElement.nativeElement.children; // find hero element
 
     testMeta = ({id: 1, name: "Thor", logo: "Mjolnir", alias: "God of Thunder"});
