@@ -9,5 +9,5 @@ import { Meta } from './meta'
 })
 
 export class MetaDetailComponent {
-  @Input() meta: Meta;
+  @Input() valueFromMetasComponent: Meta;
 }

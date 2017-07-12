@@ -1,4 +1,5 @@
-<div class="detail background" *ngIf = "meta">
-  <h2>{{meta.name}}</h2>
+<div class="detail background" *ngIf = "valueFromMetasComponent">
+  <h2 class="x">{{valueFromMetasComponent.name}}</h2>
   <div class="simpleText">a.k.a</div>
+  <h2>{{valueFromMetasComponent.alias}}</h2>
 </div>
