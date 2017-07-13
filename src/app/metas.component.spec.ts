@@ -26,7 +26,7 @@ describe('MetasComponent', () => {
     fixture = TestBed.createComponent( MetasComponent );
     comp = fixture.componentInstance;
 
-    TestBed.compileComponents().then(checkDOMWhenStable);
+    TestBed.compileComponents().then( checkDOMWhenStable );
 
   }));
 
@@ -42,7 +42,7 @@ describe('MetasComponent', () => {
   });
 
   it("selectedMeta attains the value passed in to the onSelect method", () => {
-    var oneMeta = {id: 1, name: "Thor", logo: "Mjolnir"};
+    var oneMeta = {id: 1, name: "Thor", logo: "Mjolnir", alias: "God of Thunder"};
     comp.onSelect(oneMeta);
     expect(comp.selectedMeta.logo).toEqual("Mjolnir");
   });

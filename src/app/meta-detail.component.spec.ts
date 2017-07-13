@@ -1,13 +1,10 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
-import { DebugElement }    from '@angular/core';
+import { DebugElement } from '@angular/core';
 
 import { MetaDetailComponent } from './meta-detail.component'
 import { Meta } from './meta'
 
-
-
 let fixture: ComponentFixture<MetaDetailComponent>;
-let HTMLnode: HTMLElement;
 let comp: MetaDetailComponent;
 let DOMElement: DebugElement;
 let testMeta: Meta;
@@ -25,7 +22,7 @@ describe('MetaDetailComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(MetaDetailComponent);
     comp = fixture.componentInstance;
-    DOMElement  = fixture.debugElement.nativeElement.children; // find hero element
+    DOMElement = fixture.nativeElement.children;
 
     testMeta = ({id: 1, name: "Thor", logo: "Mjolnir", alias: "God of Thunder"});
     comp.valueFromMetasComponent = testMeta;
@@ -33,7 +30,7 @@ describe('MetaDetailComponent', () => {
   });
 
 
-  it('should display hero name', () => {
+  it("should display the meta's name", () => {
     const expectedPipedName = testMeta.name.toUpperCase();
     expect(DOMElement[0].textContent.toUpperCase()).toContain(expectedPipedName);
   });

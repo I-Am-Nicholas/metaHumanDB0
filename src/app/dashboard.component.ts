@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.metaService.getMetas()
-      .then(metas => this.metas = metas.slice(5, 9));
+      .then(metas => this.metas = metas.slice(4, 8));
   }
 
 }

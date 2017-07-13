@@ -20,7 +20,7 @@ describe('DashboardComponent', () => {
     });
 
     fixture = TestBed.createComponent( DashboardComponent );
-    HTMLnode = fixture.debugElement.nativeElement;
+    HTMLnode = fixture.nativeElement;
 
     TestBed.compileComponents().then(checkDOMWhenStable);
 

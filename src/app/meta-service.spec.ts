@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { async } from '@angular/core/testing';
 import { MetaService } from './meta-service';
 
 describe('MetaService', () => {
