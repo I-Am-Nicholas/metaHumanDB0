@@ -15,24 +15,31 @@ describe('MetaDetailComponent', () => {
 
     TestBed.configureTestingModule({
       declarations: [ MetaDetailComponent ],
-    })
-    .compileComponents(); // compile template and css
+    });
+
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MetaDetailComponent);
-    comp = fixture.componentInstance;
     DOMElement = fixture.nativeElement.children;
 
     testMeta = ({id: 1, name: "Thor", logo: "Mjolnir", alias: "God of Thunder"});
+    comp = fixture.componentInstance;
     comp.valueFromMetasComponent = testMeta;
     fixture.detectChanges();
   });
 
 
-  it("should display the meta's name", () => {
-    const expectedPipedName = testMeta.name.toUpperCase();
-    expect(DOMElement[0].textContent.toUpperCase()).toContain(expectedPipedName);
+  it("should display the correct meta's name and alias", () => {
+    let expectedPipedName = testMeta.name;
+    let expectedPipedAlias = testMeta.alias;
+    expect(DOMElement[0].textContent).toContain(expectedPipedName);
+    expect(DOMElement[0].textContent).toContain(expectedPipedAlias);
+  });
+
+  it("should not display logo details", () => {
+    let unexpectedPipedLogo = testMeta.logo;
+    expect(DOMElement[0].textContent).not.toContain(unexpectedPipedLogo);
   });
 
 
