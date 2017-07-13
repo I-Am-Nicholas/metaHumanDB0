@@ -6,14 +6,14 @@ describe('MetaService', () => {
   beforeEach(() => { service = new MetaService(); });
 
   it('should return a list of correct length', async(() => {
-    service.getMetas().then(promiseList => {
-      expect(promiseList[1]).toEqual(jasmine.objectContaining({name: 'Captain America'}));
+    service.getMetas().then(promiseItem => {
+      expect(promiseItem.length).toEqual(10);
     });
   }));
 
   it('should return corresponding meta', async(() => {
-    service.getMeta(1).then(promiseList => {
-      expect(promiseList.name).toEqual('Iron Man');
+    service.getMeta(6).then(promiseItem => {
+      expect(promiseItem.name).toEqual('Black Panther');
     });
   }));
 

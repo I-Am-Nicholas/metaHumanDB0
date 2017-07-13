@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
-import { By }           from '@angular/platform-browser';
+import { By } from '@angular/platform-browser';
 
 import { MetaService } from './meta-service';
 import { MetasComponent } from './metas.component';
@@ -42,7 +42,7 @@ describe('MetasComponent', () => {
   });
 
   it("selectedMeta attains the value passed in to the onSelect method", () => {
-    var oneMeta = {id: 1, name: "Thor", logo: "Mjolnir", alias: "God of Thunder"};
+    let oneMeta = {id: 1, name: "Thor", logo: "Mjolnir", alias: "God of Thunder"};
     comp.onSelect(oneMeta);
     expect(comp.selectedMeta.logo).toEqual("Mjolnir");
   });

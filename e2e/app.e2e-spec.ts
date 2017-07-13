@@ -4,8 +4,8 @@ describe('MetaHumanDB App', () => {
     browser.get('http://localhost:4200/');
   });
 
-  var metas = element(by.className('metas'));
-  var dashWrapper = element(by.id("grid-wrap"));
+  let metas = element(by.className('metas'));
+  let dashWrapper = element(by.id("grid-wrap"));
 
 
   it('should have a title', () => {
@@ -32,9 +32,9 @@ describe('MetaHumanDB App', () => {
 
   it('clicking first name in Meta-List shows details of the selected Meta-Human.', () => {
     browser.findElement(by.id('metaList')).click();
-    var anyMeta = browser.findElement(by.className('badge'));
+    let anyMeta = browser.findElement(by.className('badge'));
     anyMeta.click();
-    var detail = element(by.className('detail'));
+    let detail = element(by.className('detail'));
     expect(browser.isElementPresent(detail)).toBe(true);
   });
 
