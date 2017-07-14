@@ -1,5 +1,7 @@
 # META-HUMAN DATABASE
 
+![screen shot 1](https://user-images.githubusercontent.com/24227633/28225113-680ce076-68c9-11e7-9cbe-6d22fc14032e.png)
+
 ## OVERVIEW
 
 - an application to help you keep track of who's who in the world of super-powered individuals.
