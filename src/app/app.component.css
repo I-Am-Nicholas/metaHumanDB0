@@ -13,9 +13,11 @@ nav a {
   background-color: #eee;
   border-radius: 4px;
   line-height: 50px;
+  opacity: 0.6;
+  color: #21658c;
 }
 nav a:visited, a:link {
-  color: #607D8B;
+  color: #21658c;
 }
 nav a:hover {
   color: #039be5;
