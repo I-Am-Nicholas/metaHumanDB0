@@ -4,11 +4,15 @@
 
 ## OVERVIEW
 
-- an application to help you keep track of who's who in the world of super-powered individuals.
+- an application to help you keep track of who's who in the world of super-powered individuals. Listing their aliases, powers, power levels and teams.
 
 - Written in Angular 4.
 
 - Tested using the Jasmine framework, with Protractor for end-to-end tests and Karma for unit tests.  
+
+## UPCOMING FEATURES
+
+- Node.js backend connecting to a Mongo database.
 
 ## ISSUES
 
