@@ -1,7 +1,7 @@
 # META-HUMAN DATABASE
 
 
-![out](https://user-images.githubusercontent.com/24227633/28260921-0f35bd3e-6ad5-11e7-8ca1-22e12014475c.gif)
+![out](https://user-images.githubusercontent.com/24227633/28261574-bc3b0af0-6ad7-11e7-8763-7c349d46c37e.gif)
 
 ## OVERVIEW
 
