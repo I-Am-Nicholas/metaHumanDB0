@@ -9,9 +9,17 @@
 
 - Written in Angular 4.
 
-- Tested using the Jasmine framework, with Protractor for end-to-end tests and Karma for unit tests.  
+- Tested using the Jasmine framework, with Protractor for end-to-end tests and Karma for unit tests.
 
-## UPCOMING FEATURES
+## TECHNOLOGIES
+
+- Angular 4
+- HTML
+- CSS
+- Typescript
+- jQuery
+
+## UPCOMING TECH
 
 - Node.js backend connecting to a Mongo database.
 
