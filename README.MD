@@ -27,4 +27,4 @@
 
 - Angular 4 not being a mature iteration has hindered me quite a bit. Specific info is hard to find or there is very little of it once I find any. I expected this but was hoping the sparse amount of information wouldn't hold me back as much as it has.
 
-- Currently attempting to understand how to properly write tests around promises. In preparing my Service to make http requests almost all of my passing tests broke due to the implementation of accessing external data and therefore dealing with asynchronous services.  
+- Currently attempting to understand how to properly write tests around promises. In preparing the app to make http requests almost all of my passing tests broke due to the implementation of accessing external data and therefore dealing with asynchronous services.  
